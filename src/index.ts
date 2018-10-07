@@ -89,7 +89,7 @@ const interval = 5*60*1000
 
 setInterval(async () => {
     console.log('interval')
-    var channel = client.channels.get('481929200048275456') as Discord.TextChannel
+    var channel = client.channels.get(channelID) as Discord.TextChannel
     await run(channel)
 }, interval)
 
